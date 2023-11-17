@@ -1,10 +1,9 @@
-package com.example.foyer_benslimene_aziz.entities;
+package com.example.foyer_benslimene_aziz.DAO.entities;
 
 
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
-import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Set;
 
@@ -13,6 +12,9 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Bloc implements Serializable {
 
     @Id

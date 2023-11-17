@@ -1,9 +1,10 @@
-package com.example.foyer_benslimene_aziz.entities;
+package com.example.foyer_benslimene_aziz.DAO.entities;
 
 
+import jakarta.persistence.*;
 import lombok.*;
 
-import javax.persistence.*;
+
 import java.io.Serializable;
 import java.util.Set;
 
@@ -12,6 +13,9 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class Chambre implements Serializable {
 
     @Id
@@ -26,6 +30,7 @@ public class Chambre implements Serializable {
     private Set<Reservation> resv;
     @ManyToOne
     Bloc BL;
+
 }
 //@NoArgsConstructor // constructeur par defaut
 //@AllArgsConstructor // constructeur parametre (tous les attributs)

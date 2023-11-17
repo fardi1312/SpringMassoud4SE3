@@ -1,10 +1,13 @@
-package com.example.foyer_benslimene_aziz.entities;
+package com.example.foyer_benslimene_aziz.DAO.entities;
 
 
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+
 import java.io.Serializable;
 
 
@@ -12,6 +15,8 @@ import java.io.Serializable;
 @Entity
 @Getter
 @Setter
+@Builder
+@AllArgsConstructor
 public class Universite implements Serializable {
 
     @Id

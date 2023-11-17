@@ -1,13 +1,15 @@
-package com.example.foyer_benslimene_aziz.entities;
+package com.example.foyer_benslimene_aziz.DAO.entities;
 
 
+import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.*;
+
 import java.io.Serializable;
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Set;
 
 
@@ -15,6 +17,8 @@ import java.util.Set;
 @Entity
 @Getter
 @Setter
+@Builder
+@AllArgsConstructor
 public class Reservation implements Serializable {
 
     @Id
